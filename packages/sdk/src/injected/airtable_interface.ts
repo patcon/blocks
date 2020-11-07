@@ -14,6 +14,9 @@ export default function getAirtableInterface(): AirtableInterface {
         if (!getAirtableInterfaceAtVersion) {
             throw spawnError('@airtable/blocks can only run inside the block frame');
         }
+        
+        console.log('AIRTABLE_INTERFACE_VERSION');
+        console.log(AIRTABLE_INTERFACE_VERSION);
 
         airtableInterface = getAirtableInterfaceAtVersion(AIRTABLE_INTERFACE_VERSION);
     }
